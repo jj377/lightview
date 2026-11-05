@@ -2,6 +2,8 @@
 
 > Lightweight BI dashboards for small teams (3–10 people).
 
+<p align="center"><img src="assets/logo.png" width="360" alt="LightView logo"></p>
+
 LightView turns everyday business data into clear, shareable dashboards — no SQL, no data team, no enterprise contract required.
 
 ## Why
