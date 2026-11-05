@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LightView — Lightweight BI dashboards for small teams</title>
+<meta name="description" content="LightView turns everyday business data into clear, shareable dashboards. Built for teams of 3–10. One flat price, no per-seat games.">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<style>
+  :root{
+    --navy:#1e3a6e; --cream:#faf4ee; --blue:#4a9fd8; --green:#6fd0a8;
+    --orange:#f5923e; --text:#2b3245; --muted:#6b7280;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:var(--cream);line-height:1.6}
+  nav{display:flex;justify-content:space-between;align-items:center;padding:1.2rem 2rem;max-width:960px;margin:0 auto}
+  nav .brand{font-weight:700;font-size:1.15rem;color:var(--navy);text-decoration:none}
+  nav .links a{margin-left:1.4rem;color:var(--muted);text-decoration:none;font-size:.95rem}
+  nav .links a:hover{color:var(--navy)}
+  header{max-width:760px;margin:0 auto;padding:4rem 2rem 3rem;text-align:center}
+  header img{width:180px;border-radius:24px;box-shadow:0 8px 30px rgba(30,58,110,.12);margin-bottom:1.6rem}
+  header h1{font-size:2.4rem;color:var(--navy);letter-spacing:-.02em}
+  header p.tag{font-size:1.25rem;color:var(--text);margin:.8rem auto 0;max-width:560px}
+  header p.sub{color:var(--muted);margin-top:1rem}
+  .badge{display:inline-block;background:#fff;border:1px solid #eee;border-radius:999px;padding:.35rem 1rem;font-size:.85rem;color:var(--navy);margin-top:1.6rem}
+  section{max-width:960px;margin:0 auto;padding:2.5rem 2rem}
+  h2{color:var(--navy);font-size:1.5rem;text-align:center;margin-bottom:2rem}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.4rem}
+  .card{background:#fff;border-radius:16px;padding:1.6rem;box-shadow:0 2px 12px rgba(30,58,110,.06)}
+  .card h3{color:var(--navy);margin-bottom:.5rem;font-size:1.05rem}
+  .card p{color:var(--muted);font-size:.95rem}
+  .dot{display:inline-block;width:.7rem;height:.7rem;border-radius:50%;margin-right:.45rem}
+  .price-card{max-width:420px;margin:0 auto;background:#fff;border-radius:16px;padding:2rem;text-align:center;box-shadow:0 2px 12px rgba(30,58,110,.06)}
+  .price-card .amount{font-size:2.2rem;font-weight:700;color:var(--navy)}
+  .price-card .per{color:var(--muted)}
+  .price-card ul{list-style:none;margin:1.2rem 0;text-align:left}
+  .price-card li{padding:.35rem 0;color:var(--text);font-size:.95rem}
+  .price-card li::before{content:"✓";color:var(--green);font-weight:700;margin-right:.6rem}
+  .beta{display:inline-block;background:var(--orange);color:#fff;font-size:.75rem;font-weight:600;border-radius:999px;padding:.2rem .7rem;margin-bottom:.8rem}
+  footer{border-top:1px solid #eee;margin-top:2rem;padding:2rem;text-align:center;color:var(--muted);font-size:.9rem}
+  footer a{color:var(--navy);text-decoration:none;margin:0 .6rem}
+</style>
+</head>
+<body>
+<nav>
+  <a class="brand" href="/">LightView</a>
+  <div class="links">
+    <a href="#features">Features</a>
+    <a href="#pricing">Pricing</a>
+    <a href="terms.html">Terms</a>
+    <a href="privacy.html">Privacy</a>
+  </div>
+</nav>
+
+<header>
+  <img src="assets/logo.png" alt="LightView logo">
+  <h1>LightView</h1>
+  <p class="tag">Lightweight BI dashboards for small teams (3–10 people).</p>
+  <p class="sub">Connect your data once. Pick a template. Get answers — no SQL, no data team, no enterprise contract.</p>
+  <span class="badge">🚧 MVP in development · Public beta coming soon</span>
+</header>
+
+<section id="features">
+  <h2>What LightView does</h2>
+  <div class="grid">
+    <div class="card"><h3><span class="dot" style="background:var(--blue)"></span>Connect</h3>
+      <p>CSV files, Google Sheets, databases and APIs — bring your data from the tools you already use.</p></div>
+    <div class="card"><h3><span class="dot" style="background:var(--green)"></span>See</h3>
+      <p>Curated dashboard templates for e-commerce, operations and marketing metrics. Ready in minutes.</p></div>
+    <div class="card"><h3><span class="dot" style="background:var(--orange)"></span>One flat price</h3>
+      <p>Everything included for your whole team. No per-seat pricing, no feature paywalls.</p></div>
+  </div>
+</section>
+
+<section id="pricing">
+  <h2>Simple pricing</h2>
+  <div class="price-card">
+    <span class="beta">BETA</span>
+    <div class="amount">$19<span class="per">/month</span></div>
+    <ul>
+      <li>Unlimited dashboards & data sources</li>
+      <li>Whole team on one plan</li>
+      <li>Curated business templates</li>
+      <li>Email support</li>
+    </ul>
+    <p style="color:var(--muted);font-size:.9rem">Checkout opens with the public beta.</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 LightView ·
+  <a href="terms.html">Terms of Service</a>·
+  <a href="privacy.html">Privacy Policy</a>·
+  <a href="https://github.com/jj377/lightview/issues">Contact</a>
+  <p style="margin-top:.6rem;font-size:.8rem">Payments are handled by our Merchant of Record, Creem.</p>
+</footer>
+</body>
+</html>
